@@ -176,20 +176,6 @@ Visualization libraries used:
 
 ---
 
-# 🔎 Key Insights
-
-Based on the analysis, the following insights were identified:
-
-* The dataset contains ______ records with ______ features after preprocessing.
-* The distribution of ______ shows ______ pattern.
-* The highest/lowest values were observed in ______ category.
-* A relationship was identified between ______ and ______.
-* The visualization results helped understand major trends and patterns in the dataset.
-
-*(Update these points according to your dataset findings.)*
-
----
-
 # 🛠️ Technologies Used
 
 | Tool             | Purpose                        |
