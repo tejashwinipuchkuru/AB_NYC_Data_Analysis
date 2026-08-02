@@ -1,0 +1,32 @@
+# Week3 -SQL Analysis 
+
+## Query 1: Display the first 10 records 
+query="""SELECT * FROM AB_NYC_2024 LIMIT 10;""" 
+print(query)
+
+## Query 2: Total number of listings
+SELECT COUNT(*) AS total_listings FROM AB_NYC_2024;
+
+## Query 3: Listings by neighbourhood group
+SELECT field5, COUNT(*) AS total_listings FROM AB_NYC_2024 GROUP BY field5 ORDER BY total_listings DESC;
+
+## Query 4: Average price by room type
+SELECT field10, AVG(field11) AS avg_price FROM AB_NYC_2024 GROUP BY field10 ORDER BY avg_price DESC;
+
+## Query 5: Maximum price
+SELECT MAX(field11) AS lowest_price FROM AB_NYC_2024;
+
+## Query 6: Minimum price
+SELECT MIN(field11) AS lowest_price FROM AB_NYC_2024;
+
+## Query 7: Average minimum nights
+SELECT AVG(field12) AS avg_minimum_nights FROM AB_NYC_2024;
+
+## Query 8: Top 10 hosts by number of listings
+SELECT field4, COUNT(*) AS listings FROM AB_NYC_2024 GROUP BY field4 ORDER BY listings DESC LIMIT 10;
+
+## Query 9: Listings with price above average(Subquery)
+SELECT field2, field1 FROM AB_NYC_2024 WHERE field11> (SELECT AVG(field11) FROM AB_NYC_2024);
+
+## Query 10: Self JOIN(Hosts with multiple listings)
+SELECT A.field4, COUNT(B.field1) AS listings FROM AB_NYC_2024 A JOIN AB_NYC_2024 B ON A.field3= B.field3 GROUP BY A.field4 HAVING COUNT(A.field1)>1 ORDER BY listings DESC;
