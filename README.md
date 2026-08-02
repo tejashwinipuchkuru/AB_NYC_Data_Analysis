@@ -1,38 +1,51 @@
-# 📊 Data Analysis Project: Data Cleaning, EDA & Visualization
+# 📊 Airbnb NYC 2024 — End-to-End Data Analytics Project
+
+---
+
+## 📌 Table of Contents
+
+- [Overview](#-project-overview)
+- [Objectives](#-project-objectives)
+- [Workflow](#-project-workflow)
+- [Week 1 — Data Cleaning & Preprocessing](#-week-1-data-cleaning--preprocessing)
+- [Week 2 — EDA & Visualization](#-week-2-exploratory-data-analysis--visualization)
+- [Week 3 — SQL Analysis](#-week-3-sql-data-analysis)
+- [Key Insights](#-key-insights-generated)
+- [Tech Stack](#️-technologies-used)
+- [Repository Structure](#-repository-structure)
+- [Learning Outcomes](#-learning-outcomes)
+- [Future Enhancements](#-future-enhancements)
+- [Author](#-author)
+
+---
 
 ## 📌 Project Overview
 
-This project focuses on performing a complete **Exploratory Data Analysis (EDA)** workflow on a real-world dataset. The main objective of this project is to transform raw and unstructured data into a clean, meaningful, and analysis-ready format.
+This project was completed as part of my **Data Analyst Internship**, applying a complete, real-world analytics workflow to the **Airbnb NYC 2024** dataset — from raw data to business-ready insight.
 
-The project covers important stages of a Data Analyst workflow including:
+The pipeline mirrors how analytics work is actually done in industry:
 
-* Understanding the dataset structure
-* Data cleaning and preprocessing
-* Handling missing values and duplicate records
-* Performing Exploratory Data Analysis
-* Creating meaningful visualizations
-* Extracting valuable insights from data
-
-This project demonstrates the practical application of **Python-based data analysis techniques** used in real-world analytics projects.
+1. Understand the raw data
+2. Clean and preprocess it
+3. Explore it (EDA)
+4. Visualize patterns and trends
+5. Query it with SQL to answer business questions
+6. Translate findings into insights that support data-driven decisions
 
 ---
 
-# 🎯 Objectives
+## 🎯 Project Objectives
 
-The key objectives of this project are:
-
-* To analyze the given dataset and understand its characteristics
-* To identify and handle data quality issues
-* To clean the dataset for further analysis
-* To explore patterns, trends, and relationships between variables
-* To visualize important findings using graphs and charts
-* To generate meaningful insights that support data-driven decisions
+- Analyze a real-world, messy dataset end to end
+- Improve data quality through systematic cleaning and preprocessing
+- Surface trends and patterns via exploratory analysis
+- Build clear, purposeful visualizations
+- Answer business questions using SQL
+- Strengthen practical, job-ready data analyst skills
 
 ---
 
-# 🗂️ Project Workflow
-
-The project was completed in the following phases:
+## 🔄 Project Workflow
 
 ```
 Raw Dataset
@@ -41,227 +54,158 @@ Data Understanding
       ↓
 Data Cleaning & Preprocessing
       ↓
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis
       ↓
 Data Visualization
       ↓
-Insights Generation
+SQL Analysis
       ↓
-Final Analysis Report
+Insights Generation
 ```
 
 ---
 
-# 📅 Week 1: Data Cleaning & Preprocessing
+## 📅 Week 1: Data Cleaning & Preprocessing
 
-## 🔍 Dataset Understanding
+**Objective:** Prepare the raw Airbnb dataset for analysis by resolving data quality issues.
 
-Initially, the dataset was explored to understand:
+**Tasks performed**
+- ✔ Loaded and explored the raw dataset
+- ✔ Audited rows, columns, and data types
+- ✔ Identified and handled missing values
+- ✔ Removed duplicate records
+- ✔ Resolved inconsistent/invalid entries
+- ✔ Standardized column formats
+- ✔ Exported a clean, analysis-ready dataset
 
-* Number of rows and columns
-* Data types of different features
-* Statistical summary
-* Missing values distribution
-* Unique values in categorical columns
-
-Python libraries used:
-
-* Pandas
-* NumPy
+**Skills applied:** Data Cleaning · Data Preprocessing · Data Validation · Pandas · NumPy
 
 ---
 
-## 🧹 Data Cleaning Steps Performed
+## 📅 Week 2: Exploratory Data Analysis & Visualization
 
-### 1. Handling Missing Values
+**Objective:** Explore the cleaned dataset to surface meaningful patterns, relationships, and trends.
 
-Missing values were identified and treated using appropriate techniques to improve data quality.
+**Univariate analysis**
+- Distribution analysis
+- Frequency analysis
+- Statistical summaries
 
-Steps performed:
+**Bivariate analysis**
+- Category-to-category comparisons
+- Correlation analysis
+- Trend identification
 
-* Checked missing value count in each column
-* Analyzed the percentage of missing data
-* Removed or handled missing records based on importance
+**Visualizations built (5 total)**
+| # | Visualization | Question it answers |
+|---|---|---|
+| 1 | Price distribution | How are listing prices spread across the market? |
+| 2 | Room type distribution | Which room types dominate the market? |
+| 3 | Neighbourhood-wise listings | Where is supply concentrated across NYC? |
+| 4 | Availability trends | How does availability vary across listings? |
+| 5 | Review patterns | How do reviews relate to listing activity? |
 
----
-
-### 2. Removing Duplicate Records
-
-Duplicate entries were detected and removed to avoid:
-
-* Incorrect analysis
-* Data repetition
-* Biased results
-
----
-
-### 3. Data Type Correction
-
-The data types of columns were verified and corrected wherever required.
-
-Examples:
-
-* Converting date columns into proper date format
-* Converting numerical columns into appropriate data types
+**Skills applied:** Exploratory Data Analysis · Data Visualization · Matplotlib · Seaborn · Insight Generation
 
 ---
 
-### 4. Data Consistency Check
+## 📅 Week 3: SQL Data Analysis
 
-Performed additional checks to ensure:
+**Objective:** Analyze the structured Airbnb dataset with SQL to answer concrete business questions.
 
-* No unnecessary spaces
-* Correct formatting
-* Valid values
-* Clean column names
+**Tasks performed**
+- ✔ Built a SQLite database
+- ✔ Imported the cleaned dataset into the database
+- ✔ Designed analytical SQL queries
+- ✔ Applied filtering and aggregation techniques
+- ✔ Analyzed listings, pricing, hosts, and availability
+- ✔ Saved and documented query outputs
 
----
-
-# 📅 Week 2: Exploratory Data Analysis & Visualization
-
-## 📊 Exploratory Data Analysis (EDA)
-
-EDA was performed to understand the hidden patterns and relationships present in the dataset.
-
-The analysis included:
-
-### Univariate Analysis
-
-Analyzed individual variables to understand:
-
-* Distribution
-* Frequency
-* Range
-* Central tendency
-
-Techniques used:
-
-* Histograms
-* Count plots
-* Box plots
+**SQL concepts used:** `SELECT` · `WHERE` · `ORDER BY` · `GROUP BY` · `HAVING` · `LIMIT` · `COUNT()` · `AVG()` · `MIN()` · `MAX()` · `SUM()`
 
 ---
 
-### Bivariate Analysis
+## 📊 Key Insights Generated
 
-Studied relationships between multiple variables to identify:
-
-* Correlations
-* Trends
-* Comparisons between categories
-
-Techniques used:
-
-* Scatter plots
-* Bar charts
-* Correlation analysis
+- Distribution of listings across NYC neighbourhoods, highlighting supply concentration
+- Pricing patterns across different room types
+- Availability trends across the listing base
+- Host performance benchmarked by number of active listings
+- Relationship between review volume and listing characteristics
 
 ---
 
-# 📈 Data Visualization
+## 🛠️ Technologies Used
 
-Five different visualizations were created to represent important patterns in the dataset.
-
-Visualizations helped in:
-
-* Better understanding of trends
-* Identifying important factors
-* Comparing different categories
-* Communicating insights effectively
-
-Visualization libraries used:
-
-* Matplotlib
-* Seaborn
-
----
-
-# 🛠️ Technologies Used
-
-| Tool             | Purpose                        |
-| ---------------- | ------------------------------ |
-| Python           | Data analysis programming      |
-| Pandas           | Data manipulation and cleaning |
-| NumPy            | Numerical operations           |
-| Matplotlib       | Data visualization             |
-| Seaborn          | Statistical visualization      |
-| Jupyter Notebook | Development environment        |
-| Git & GitHub     | Version control                |
+| Technology | Purpose |
+|---|---|
+| Python | Core data analysis |
+| Pandas | Data manipulation & cleaning |
+| NumPy | Numerical operations |
+| Matplotlib | Visualization |
+| Seaborn | Statistical visualization |
+| SQL | Structured data analysis |
+| SQLite | Database management |
+| Jupyter Notebook | Development environment |
+| VS Code | Code editing |
+| Git & GitHub | Version control |
 
 ---
 
-# 📂 Project Structure
+## 📂 Repository Structure
 
 ```
-Data-Analysis-Project/
+Data-Analyst-Internship/
 │
-├── Dataset/
-│   └── dataset.csv
+├── Week1_Data_Cleaning/
+│   ├── Dataset
+│   ├── Notebook
+│   └── README.md
 │
-├── Notebook/
-│   └── Data_Analysis_Project.ipynb
+├── Week2_EDA_Visualization/
+│   ├── Notebook
+│   ├── Visualizations
+│   └── README.md
 │
-├── README.md
+├── Week3_SQL_Analysis/
+│   ├── airbnb_analysis.db
+│   ├── sql_queries.sql
+│   ├── outputs
+│   └── README.md
 │
-└── requirements.txt
+└── README.md
 ```
 
 ---
 
-# ▶️ How to Run the Project
+## 📚 Learning Outcomes
 
-### Clone the repository
-
-```bash
-git clone <repository-url>
-```
-
-### Install required libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open the notebook file and execute the cells.
+- ✔ Preparing real-world datasets for analysis
+- ✔ Performing exploratory data analysis
+- ✔ Building meaningful, purpose-driven visualizations
+- ✔ Writing SQL queries to solve business problems
+- ✔ Working with relational databases
+- ✔ Documenting analytics projects to a professional standard
+- ✔ Using GitHub for project and version management
 
 ---
 
-# 📌 Conclusion
+## 🚀 Future Enhancements
 
-This project provided practical experience in the complete data analysis lifecycle, starting from raw data collection to generating meaningful insights.
-
-Through this project, I gained hands-on experience in:
-
-* Data preprocessing techniques
-* Exploratory Data Analysis
-* Data visualization
-* Finding patterns from datasets
-* Presenting analytical insights
-
-The project strengthened my understanding of how data analysts transform raw data into valuable information for decision-making.
+- Build interactive dashboards using Power BI / Tableau
+- Apply advanced SQL techniques (window functions, CTEs)
+- Perform predictive analysis using Machine Learning
+- Automate the analysis workflow end to end
+- Deploy the analytics dashboard for public/live access
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Tejashwini Puchkuru**
+B.Tech CSE (Artificial Intelligence & Machine Learning)
+Aspiring AI Engineer | Data Analyst
 
-Aspiring AI Engineer | Data Analytics Enthusiast
-
-Skills:
-Python | SQL | Data Analysis | Machine Learning
+**Technical Skills:** Python · SQL · Data Analytics · Machine Learning · Visualization
 
 ---
-
-# ⭐ Future Improvements
-
-* Build interactive dashboards using Power BI/Tableau
-* Perform advanced statistical analysis
-* Apply machine learning models for prediction
-* Automate the analysis pipeline
