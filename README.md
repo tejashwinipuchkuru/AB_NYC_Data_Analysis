@@ -1,211 +1,247 @@
-# 📊 Airbnb NYC 2024 — End-to-End Data Analytics Project
+Airbnb NYC 2024 — End-to-End Data Analytics Project
 
----
+An end-to-end data analytics project built during a Data Analyst Internship, applying a complete real-world workflow to the Airbnb NYC 2024 dataset — from raw data to business-ready insights.
+Python Pandas NumPy Matplotlib Seaborn SQL SQLite Power BI
 
-## 📌 Table of Contents
+Table of Contents:
+Overview
+Objectives
+Workflow
+Week 1 — Data Cleaning & Preprocessing
+Week 2 — EDA & Visualization
+Week 3 — SQL Analysis
+Week 4 — Power BI Dashboard & Insights
+Key Insights
+Tech Stack
+Repository Structure
+Learning Outcomes
+Future Enhancements
+Author
 
-- [Overview](#-project-overview)
-- [Objectives](#-project-objectives)
-- [Workflow](#-project-workflow)
-- [Week 1 — Data Cleaning & Preprocessing](#-week-1-data-cleaning--preprocessing)
-- [Week 2 — EDA & Visualization](#-week-2-exploratory-data-analysis--visualization)
-- [Week 3 — SQL Analysis](#-week-3-sql-data-analysis)
-- [Key Insights](#-key-insights-generated)
-- [Tech Stack](#️-technologies-used)
-- [Repository Structure](#-repository-structure)
-- [Learning Outcomes](#-learning-outcomes)
-- [Future Enhancements](#-future-enhancements)
-- [Author](#-author)
+Overview:
 
----
-
-## 📌 Project Overview
-
-This project was completed as part of my **Data Analyst Internship**, applying a complete, real-world analytics workflow to the **Airbnb NYC 2024** dataset — from raw data to business-ready insight.
-
-The pipeline mirrors how analytics work is actually done in industry:
-
-1. Understand the raw data
-2. Clean and preprocess it
-3. Explore it (EDA)
-4. Visualize patterns and trends
-5. Query it with SQL to answer business questions
-6. Translate findings into insights that support data-driven decisions
-
----
-
-## 🎯 Project Objectives
-
-- Analyze a real-world, messy dataset end to end
-- Improve data quality through systematic cleaning and preprocessing
-- Surface trends and patterns via exploratory analysis
-- Build clear, purposeful visualizations
-- Answer business questions using SQL
-- Strengthen practical, job-ready data analyst skills
-
----
-
-## 🔄 Project Workflow
-
-```
-Raw Dataset
-      ↓
-Data Understanding
-      ↓
+This project follows an end-to-end data analytics pipeline that mirrors a real-world industry workflow:
+Understand → Clean → Explore → Analyze → Visualize → Query → Dashboard → Generate Insights
+It is structured across four major stages:
 Data Cleaning & Preprocessing
-      ↓
+Exploratory Data Analysis & Visualization
+SQL Data Analysis
+Interactive Power BI Dashboard & Insights Report
+
+Objectives:
+
+Analyze a real-world Airbnb dataset end to end
+Improve data quality through systematic cleaning and preprocessing
+Perform exploratory data analysis to identify patterns and trends
+Build clear and purposeful visualizations
+Use SQL to answer business-related questions
+Create an interactive Power BI dashboard
+Present analytical findings through an insights report
+Strengthen practical, job-ready data analyst skills
+
+Workflow:
+
+Raw Dataset
+     ↓
+Data Understanding
+     ↓
+Data Cleaning & Preprocessing
+     ↓
 Exploratory Data Analysis
-      ↓
+     ↓
 Data Visualization
-      ↓
+     ↓
 SQL Analysis
-      ↓
-Insights Generation
-```
+     ↓
+Power BI Dashboard
+     ↓
+Insights Report
+     ↓
+Business Insights
 
----
+Week 1 — Data Cleaning & Preprocessing
 
-## 📅 Week 1: Data Cleaning & Preprocessing
+Objective: Prepare the raw Airbnb dataset for analysis by identifying and resolving data quality issues.
 
-**Objective:** Prepare the raw Airbnb dataset for analysis by resolving data quality issues.
+Tasks Performed
 
-**Tasks performed**
-- ✔ Loaded and explored the raw dataset
-- ✔ Audited rows, columns, and data types
-- ✔ Identified and handled missing values
-- ✔ Removed duplicate records
-- ✔ Resolved inconsistent/invalid entries
-- ✔ Standardized column formats
-- ✔ Exported a clean, analysis-ready dataset
+1.Loaded and explored the raw dataset
+2.Audited rows, columns, and data types
+3.Identified and handled missing values
+4.Removed duplicate records
+5.Resolved inconsistent and invalid entries
+6.Standardized column formats
+7.Validated the cleaned data
+8.Exported a clean, analysis-ready dataset
 
-**Skills applied:** Data Cleaning · Data Preprocessing · Data Validation · Pandas · NumPy
+Skills Applied: Data Cleaning · Data Preprocessing · Data Validation · Pandas · NumPy
 
----
+Week 2 — EDA & Visualization
 
-## 📅 Week 2: Exploratory Data Analysis & Visualization
+Objective: Explore the cleaned dataset to identify meaningful patterns, relationships, distributions, and trends.
 
-**Objective:** Explore the cleaned dataset to surface meaningful patterns, relationships, and trends.
+1.Univariate Analysis-
+Distribution analysis
+Frequency analysis
+Statistical summaries
 
-**Univariate analysis**
-- Distribution analysis
-- Frequency analysis
-- Statistical summaries
+2.Bivariate Analysis-
+Category-to-category comparisons
+Correlation analysis
+Trend identification
 
-**Bivariate analysis**
-- Category-to-category comparisons
-- Correlation analysis
-- Trend identification
+Visualizations Built-
 
-**Visualizations built (5 total)**
-| # | Visualization | Question it answers |
-|---|---|---|
-| 1 | Price distribution | How are listing prices spread across the market? |
-| 2 | Room type distribution | Which room types dominate the market? |
-| 3 | Neighbourhood-wise listings | Where is supply concentrated across NYC? |
-| 4 | Availability trends | How does availability vary across listings? |
-| 5 | Review patterns | How do reviews relate to listing activity? |
+#	Visualization	            Question It Answers
+1	Price Distribution	      How are listing prices distributed across the market?
+2	Room Type Distribution	      Which room types dominate the market?
+3	Neighbourhood-wise Listings	Where is Airbnb supply concentrated across NYC?
+4	Availability Trends	      How does availability vary across listings?
+5	Review Patterns	            How do reviews relate to listing activity?
 
-**Skills applied:** Exploratory Data Analysis · Data Visualization · Matplotlib · Seaborn · Insight Generation
+Skills Applied: Exploratory Data Analysis · Data Visualization · Matplotlib · Seaborn · Insight Generation
 
----
+Week 3 — SQL Analysis
 
-## 📅 Week 3: SQL Data Analysis
+Objective: Analyze the structured Airbnb dataset using SQL to answer concrete business questions.
 
-**Objective:** Analyze the structured Airbnb dataset with SQL to answer concrete business questions.
+Tasks Performed-
 
-**Tasks performed**
-- ✔ Built a SQLite database
-- ✔ Imported the cleaned dataset into the database
-- ✔ Designed analytical SQL queries
-- ✔ Applied filtering and aggregation techniques
-- ✔ Analyzed listings, pricing, hosts, and availability
-- ✔ Saved and documented query outputs
+1.Built a SQLite database
+2.Imported the cleaned dataset into the database
+3.Designed analytical SQL queries
+4.Applied filtering and aggregation techniques
+5.Analyzed listings, pricing, hosts, and availability
+6.Saved and documented query outputs
 
-**SQL concepts used:** `SELECT` · `WHERE` · `ORDER BY` · `GROUP BY` · `HAVING` · `LIMIT` · `COUNT()` · `AVG()` · `MIN()` · `MAX()` · `SUM()`
+SQL Concepts Used: SELECT · WHERE · ORDER BY · GROUP BY · HAVING · LIMIT · COUNT() · AVG() · MIN() · MAX() · SUM()
 
----
+Skills Applied: SQL · SQLite · Data Aggregation · Business Question Analysis · Database Management
 
-## 📊 Key Insights Generated
+Week 4 — Power BI Dashboard & Insights
 
-- Distribution of listings across NYC neighbourhoods, highlighting supply concentration
-- Pricing patterns across different room types
-- Availability trends across the listing base
-- Host performance benchmarked by number of active listings
-- Relationship between review volume and listing characteristics
+Objective: Transform the analytical findings from the previous weeks into an interactive Power BI dashboard and present the key findings through an insights report.
 
----
+Tasks Performed-
 
-## 🛠️ Technologies Used
+1.Imported the Airbnb dataset into Power BI
+2.Prepared the data for dashboard analysis
+3.Created KPI cards to highlight important metrics
+4.Built interactive charts and visualizations
+5.Added filters and slicers for dynamic exploration
+6.Configured dashboard interactions
+7.Designed a user-friendly analytical dashboard
+8.Saved the completed .pbix Power BI dashboard file
+9.Created an insights report based on the dashboard findings
+10.Presented project insights in a business-oriented format
 
-| Technology | Purpose |
-|---|---|
-| Python | Core data analysis |
-| Pandas | Data manipulation & cleaning |
-| NumPy | Numerical operations |
-| Matplotlib | Visualization |
-| Seaborn | Statistical visualization |
-| SQL | Structured data analysis |
-| SQLite | Database management |
-| Jupyter Notebook | Development environment |
-| VS Code | Code editing |
-| Git & GitHub | Version control |
+Dashboard Components-
 
----
+The Power BI dashboard focuses on presenting important Airbnb marketplace metrics and patterns, including:
 
-## 📂 Repository Structure
+1.Listing performance
+2.Pricing patterns
+3.Room type distribution
+4.Neighbourhood-level trends
+5.Availability
+6.Review-related metrics
+7.Host/listing performance
 
-```
-Data-Analyst-Internship/
+Dashboard Outcome-
+
+The dashboard presents project insights in an interactive, easy-to-understand format, allowing users to explore Airbnb listing patterns and identify key business trends using filters and visual interactions.
+
+Skills Applied: Power BI · Data Visualization · Dashboard Design · KPI Analysis · Slicers · Interactive Reporting · Business Intelligence · Insight Generation
+
+Key Insights-
+
+The complete analysis generated insights related to:
+
+Distribution of Airbnb listings across NYC neighbourhoods
+Supply concentration across different areas
+Pricing patterns across room types
+Availability patterns across listings
+Host performance based on listing activity
+Review volume and listing characteristics
+Differences in Airbnb offerings across neighbourhoods
+Key marketplace patterns presented through the Power BI dashboard
+
+The Power BI dashboard and insights report provide a consolidated view of these findings, making the results easier to interpret for business decision-making.
+
+Tech Stack
+Technology	      Purpose
+Python	      Core data analysis
+Pandas	      Data manipulation & cleaning
+NumPy	            Numerical operations
+Matplotlib	      Data visualization
+Seaborn	      Statistical visualization
+SQL	            Structured data analysis
+SQLite       	Database management
+Power BI	      Interactive dashboard & reporting
+Jupyter Notebook	Development environment
+VS Code	      Code editing & project management
+Git & GitHub	Version control
+
+Repository Structure:
+
+AB_NYC_Data_Analysis/
 │
-├── Week1_Data_Cleaning/
-│   ├── Dataset
-│   ├── Notebook
-│   └── README.md
+├── .venv/                              # Virtual environment
 │
-├── Week2_EDA_Visualization/
-│   ├── Notebook
-│   ├── Visualizations
-│   └── README.md
+├── dashboard/
+│   └── Airbnb_Dashboard.pbix           # Power BI dashboard
 │
-├── Week3_SQL_Analysis/
-│   ├── airbnb_analysis.db
-│   ├── sql_queries.sql
-│   ├── outputs
-│   └── README.md
+├── data/
+│   ├── AB_NYC_2024.csv                 # Raw Airbnb dataset
+│   └── AB_NYC_cleaned.csv              # Cleaned dataset
 │
-└── README.md
-```
+├── images/
+│   └── dashboard.png                   # Dashboard screenshot
+│
+├── notebooks/
+│   ├── Week1_Data_Cleaning.ipynb       # Data cleaning & preprocessing
+│   ├── Week2_EDA.ipynb                 # Exploratory data analysis
+│   ├── Week3_SQL_Analysis.sql          # SQL analysis
+│   ├── outputs/                        # SQL query outputs
+│   ├── airbnb.db.sqbpro                # SQLite database project
+│   ├── sql.queries                     # SQL queries
+│   └── SQLite.sql                      # SQLite scripts
+│
+├── reports/
+│   └── Insights_Report.pdf             # Business insights report
+│
+├── README.md                           # Project documentation
+└── requirements.txt                    # Python dependencies
 
----
+Learning Outcomes-
 
-## 📚 Learning Outcomes
+Through this project, practical experience was gained in:
+1.Preparing real-world datasets for analysis
+2.Identifying and resolving data quality issues
+3.Performing exploratory data analysis
+4.Building meaningful, purpose-driven visualizations
+5.Writing SQL queries to solve business questions
+6.Working with relational databases
+7.Designing interactive Power BI dashboards
+8.Creating KPI-based reports
+9.Using filters and slicers for interactive analysis
+10.Translating analytical results into business insights
+11.Documenting analytics projects professionally
+12.Using GitHub for project and version management
 
-- ✔ Preparing real-world datasets for analysis
-- ✔ Performing exploratory data analysis
-- ✔ Building meaningful, purpose-driven visualizations
-- ✔ Writing SQL queries to solve business problems
-- ✔ Working with relational databases
-- ✔ Documenting analytics projects to a professional standard
-- ✔ Using GitHub for project and version management
+Future Enhancements-
 
----
+Build more advanced interactive dashboards using Power BI
+Add advanced SQL techniques such as CTEs and Window Functions
+Perform predictive analysis using Machine Learning
+Develop price prediction models
+Analyze customer/review sentiment
+Automate the complete data analysis workflow
+Deploy the analytics dashboard for public/live access
+Add real-time or regularly updated Airbnb data
 
-## 🚀 Future Enhancements
+Author-
 
-- Build interactive dashboards using Power BI / Tableau
-- Apply advanced SQL techniques (window functions, CTEs)
-- Perform predictive analysis using Machine Learning
-- Automate the analysis workflow end to end
-- Deploy the analytics dashboard for public/live access
+Tejashwini Puchkuru B.Tech CSE — Artificial Intelligence & Machine Learning Aspiring AI Engineer | Data Analyst
 
----
-
-## 👩‍💻 Author
-
-**Tejashwini Puchkuru**
-B.Tech CSE (Artificial Intelligence & Machine Learning)
-Aspiring AI Engineer | Data Analyst
-
-**Technical Skills:** Python · SQL · Data Analytics · Machine Learning · Visualization
-
----
+Technical Skills: Python · SQL · Data Analytics · Machine Learning · Data Visualization · Power BI
